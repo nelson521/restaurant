@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Make a reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    
+  <style>
+    
+
+      </style>
+    </head>
+    
+<body>
+    
+<!-- Bootstrap Container -->
+    <div class="container">
+    
+    <!-- Jumbotron for Title -->
+        <div class="jumbotron" style="background-color:white ; color: navy; border-style:solid; border-color:navy;" >
+          
+            <strong>
+            <h3 class="text-center" ><span class="glyphicon glyphicon-fire"> Hot Spot Restaurant</span></h3>
+            <h1 class="text-center"> Make a Reservation</strong></h1>
+            </strong>
+    <!-- Buttons in Jumbotron -->
+        <div class="btn-group btn-group-center">
+          <a href="#" class="btn btn-info btn-sm">
+                <span class="glyphicon glyphicon-th-list"></span> View Tables
+              
+              <a href="#" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-home"></span> </a></div></div>
+    
+<!-- Bootstrap Form Header -->       
+                <div class="panel panel-info text-important" style= "border-style:solid; border-color:navy;">
+                <div class="panel-heading"> <h3>Make a Reservation</h3><p id="error"></p></div>
+                <div class="panel-body"></div>
+                
+<!-- Bootstrap Form--> 
+        <form>    
+                <div class="form-group">
+                        <label for="text">Name</label>
+                            <input type="text" class="form-control" placeholder= "Your Name Here" id="Name" minlength="a" required="true">
+                    </div>
+                <div class="form-group">
+                        <label for="text">Email</label>
+                            <input type="email" class="form-control" placeholder="@Email" id="email" minlength="3" required="true">
+                    </div>
+                    
+                <div class="form-group">
+                        <label for="text">Phone Number</label>
+                            <input type="number" class="form-control" placeholder= "Enter 10-digit Phone Number" id="phonenumber" minlength="10"required="true">
+                </div>
+                    
+                <div class="form-group">
+                        <label for="text">Unique ID</label>
+                            <input type="number" class="form-control" id="idnumber" required="true">
+                </div>
+                    
+                <button type="submit" class="btn btn-info center-block" id="submitres" onlcick = "myFunction()" >Submit</button>
+                <a href="#"></a><p style= text-align:center>Cancel</p></a>
+                    </form>
+                </div>
+                </div>
+<!-- JS--> 
+<script type="text/javascript">
+
+    function myFunction() {
+        document.getElementById("submitres")
+
+    // Storing and retreiving new train data
+            name = $("#name").val().trim();
+            email = $("#email").val().trim();
+            phone = $("#phonenumber").val().trim();
+            uniqueID = $("#idnumber").val().trim();
+    
+            console.log(name);
+            console.log(email);
+            console.log(phone);
+            console.log(uniqueID);
+
+    };
+
+</script>
+    
+</body>
+</html>
